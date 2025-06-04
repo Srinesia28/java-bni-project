@@ -67,6 +67,12 @@
 				<version>7.4</version>
 			</dependency>
 		-->
+		<!-- ini yang di tambhkan -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- Ini endingnya -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
