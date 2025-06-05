@@ -39,7 +39,7 @@ public class User {
       // default constructor
     }
 
-    public User(String username, String passwordHash, String role, OffsetDateTime createdAt) {
+    public User(String username, String passwordHash, String role, OffsetDateTime createdAt, OffsetDateTime updateAt, String emailAddress, Boolean isActive) {
         this.username = username;
         this.passwordHash = passwordHash;
         this.role = role;
