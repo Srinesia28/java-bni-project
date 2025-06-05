@@ -30,6 +30,14 @@ public class AuthController {
         response.put("status", 200);
         response.put("message", message);
 
+        // Ini di tamabhin
+        if (message.equals("User registered successfully")) {
+            response.put("username", username);
+        } else {
+            response.put("error", "Registration failed");
+        }
+        // sampe ke sini 
+
         return ResponseEntity.ok(response);
     }
 
