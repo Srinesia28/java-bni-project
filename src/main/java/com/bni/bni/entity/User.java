@@ -31,7 +31,7 @@ public class User {
     private String emailAddress;
 
     @Column(name = "is_active", nullable = false)
-    private Boolean isActive;
+    private Boolean isActive; 
 
     //sampai ini 
 
