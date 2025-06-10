@@ -2,20 +2,20 @@ pipeline{
     agent any
 
     environment {
-        PROJECT_NAME = "srinesia28-dev"
-        BUILD_NAME = "java-bni-project-git"
+       PROJECT_NAME = "srinesia28-dev"
+       BUILD_NAME = "java-bni-project-git"
     }
 
     stages {
-        stage('Trigger Build in OpenShift'){
+        stage('Triggers Build in Openshift') {
             steps {
                 sh "oc start-build ${BUILD_NAME} --from-dir=. --follow -n ${PROJECT_NAME}"
             }
         }
 
-        stage ('Deploy to OpenShift') {
+        stage("Deploy to Openshift") {
             steps {
-                sh "oc rollout restart deployment /${BUILD_NAME} -n ${PROJECT_NAME}"
+                sh "oc rollout restart deployment/${BUILD_NAME} -n ${PROJECT_NAME}"
             }
         }
     }
