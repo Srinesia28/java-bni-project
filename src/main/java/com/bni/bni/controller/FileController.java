@@ -60,7 +60,7 @@ public class FileController {
             Resource resource = new UrlResource(filePath.toUri());
 
             if (!resource.exists()) {
-                return ResponseEntity.status(401).build();
+                return ResponseEntity.notFound().build();
             }
             String contentType = Files.probeContentType(filePath);
             if (contentType == null) {
@@ -77,3 +77,4 @@ public class FileController {
         }
     }
 }
+
