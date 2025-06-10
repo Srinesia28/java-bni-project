@@ -26,6 +26,6 @@ pipeline{
         }
         failure {
             echo 'Gagal menjalankan pipeline'
-        } //TAMBAHAN
+        } //TAMBAHA
     )
 }
