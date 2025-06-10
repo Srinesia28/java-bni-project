@@ -75,6 +75,7 @@ public class ProfileController {
         profile.setUpdatedAt(OffsetDateTime.now());
 
         Profile savedProfile = profileService.createProfile(profile);
+        
 
         // Response
         Map<String, Object> response = new HashMap<>();
