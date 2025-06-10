@@ -24,7 +24,7 @@ public class AuthService {
 
     public String register(String username, String password, String emailAddress) {
         if (repo.existsByUsername(username)) {
-            return "User already exists";
+            return "User already exists BANGET LOCHHHHHH";
         }
 
         User user = new User();
