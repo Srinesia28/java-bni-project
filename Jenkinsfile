@@ -20,12 +20,12 @@ pipeline{
         }
     }
 
-    post (
+    post {
         success {
-            echo 'Build & Deployment Successfull via OpenShift BuildConfig!'
+            echo "Build Succeeded!"
         }
         failure {
-            echo 'Gagal menjalankan pipeline'
-        } //TAMBAHA
-    )
+            echo "Build Failed!"
+        }
+    }
 }
